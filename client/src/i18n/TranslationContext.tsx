@@ -1,41 +1,45 @@
 import React, { createContext, useContext, useEffect, useMemo, ReactNode } from 'react'
 import { useSettingsStore } from '../store/settingsStore'
-import de from './translations/de'
+// import de from './translations/de'
 import en from './translations/en'
-import es from './translations/es'
+// import es from './translations/es'
 import fr from './translations/fr'
-import hu from './translations/hu'
-import it from './translations/it'
-import ru from './translations/ru'
-import zh from './translations/zh'
-import zhTw from './translations/zhTw'
-import nl from './translations/nl'
-import ar from './translations/ar'
-import br from './translations/br'
-import cs from './translations/cs'
-import pl from './translations/pl'
+// import hu from './translations/hu'
+// import it from './translations/it'
+// import ru from './translations/ru'
+// import zh from './translations/zh'
+// import zhTw from './translations/zhTw'
+// import nl from './translations/nl'
+// import ar from './translations/ar'
+// import br from './translations/br'
+// import cs from './translations/cs'
+// import pl from './translations/pl'
+import ph from './translations/ph'
 
 type TranslationStrings = Record<string, string | { name: string; category: string }[]>
 
 export const SUPPORTED_LANGUAGES = [
-  { value: 'de', label: 'Deutsch' },
+  // { value: 'de', label: 'Deutsch' },
   { value: 'en', label: 'English' },
-  { value: 'es', label: 'Español' },
+  // { value: 'es', label: 'Español' },
   { value: 'fr', label: 'Français' },
-  { value: 'hu', label: 'Magyar' },
-  { value: 'nl', label: 'Nederlands' },
-  { value: 'br', label: 'Português (Brasil)' },
-  { value: 'cs', label: 'Česky' },
-  { value: 'pl', label: 'Polski' },
-  { value: 'ru', label: 'Русский' },
-  { value: 'zh', label: '简体中文' },
-  { value: 'zh-TW', label: '繁體中文' },
-  { value: 'it', label: 'Italiano' },
-  { value: 'ar', label: 'العربية' },
+  // { value: 'hu', label: 'Magyar' },
+  // { value: 'nl', label: 'Nederlands' },
+  // { value: 'br', label: 'Português (Brasil)' },
+  // { value: 'cs', label: 'Česky' },
+  // { value: 'pl', label: 'Polski' },
+  // { value: 'ru', label: 'Русский' },
+  // { value: 'zh', label: '简体中文' },
+  // { value: 'zh-TW', label: '繁體中文' },
+  // { value: 'it', label: 'Italiano' },
+  // { value: 'ar', label: 'العربية' },
+  { value: 'ph', label: 'Tagalog' },
 ] as const
 
-const translations: Record<string, TranslationStrings> = { de, en, es, fr, hu, it, ru, zh, 'zh-TW': zhTw, nl, ar, br, cs, pl }
-const LOCALES: Record<string, string> = { de: 'de-DE', en: 'en-US', es: 'es-ES', fr: 'fr-FR', hu: 'hu-HU', it: 'it-IT', ru: 'ru-RU', zh: 'zh-CN', 'zh-TW': 'zh-TW', nl: 'nl-NL', ar: 'ar-SA', br: 'pt-BR', cs: 'cs-CZ', pl: 'pl-PL' }
+// const translations: Record<string, TranslationStrings> = { de, en, es, fr, hu, it, ru, zh, 'zh-TW': zhTw, nl, ar, br, cs, pl }
+const translations: Record<string, TranslationStrings> = { en,fr,ph }
+// const LOCALES: Record<string, string> = { de: 'de-DE', en: 'en-US', es: 'es-ES', fr: 'fr-FR', hu: 'hu-HU', it: 'it-IT', ru: 'ru-RU', zh: 'zh-CN', 'zh-TW': 'zh-TW', nl: 'nl-NL', ar: 'ar-SA', br: 'pt-BR', cs: 'cs-CZ', pl: 'pl-PL' }
+const LOCALES: Record<string, string> = { en: 'en-US', fr: 'fr-FR', ph: 'ph-PH' }
 const RTL_LANGUAGES = new Set(['ar'])
 
 export function getLocaleForLanguage(language: string): string {
@@ -44,7 +48,8 @@ export function getLocaleForLanguage(language: string): string {
 
 export function getIntlLanguage(language: string): string {
   if (language === 'br') return 'pt-BR'
-  return ['de', 'es', 'fr', 'hu', 'it', 'ru', 'zh', 'zh-TW', 'nl', 'ar', 'cs', 'pl'].includes(language) ? language : 'en'
+  // return ['de', 'es', 'fr', 'hu', 'it', 'ru', 'zh', 'zh-TW', 'nl', 'ar', 'cs', 'pl'].includes(language) ? language : 'en'
+  return ['fr', 'ph'].includes(language) ? language : 'en'
 }
 
 export function isRtlLanguage(language: string): boolean {
