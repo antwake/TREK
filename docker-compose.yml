@@ -42,8 +42,8 @@ services:
 #      - MCP_RATE_LIMIT=60 # Max MCP API requests per user per minute (default: 60)
 #      - MCP_MAX_SESSION_PER_USER=5 # Max concurrent MCP sessions per user (default: 5)
     volumes:
-      - ./data:/Volumes/data/Docker/trek/data #/app/data
-      - ./uploads:/Volumes/data/Docker/trek/uploads #/app/uploads
+      - /Volumes/data/Docker/trek/data:/app/data
+      - /Volumes/data/Docker/trek/uploads:/app/uploads
     restart: unless-stopped
     healthcheck:
       test: ["CMD", "wget", "-qO-", "http://localhost:3000/api/health"]
