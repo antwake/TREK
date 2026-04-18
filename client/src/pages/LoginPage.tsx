@@ -488,9 +488,9 @@ export default function LoginPage(): React.ReactElement {
           <h2 style={{ margin: '0 0 12px', fontSize: 36, fontWeight: 700, color: 'white', lineHeight: 1.15, letterSpacing: '-0.02em', fontFamily: "'MuseoModerno', sans-serif", textTransform: 'lowercase' }}>
             {t('login.tagline')}
           </h2>
-          <p style={{ margin: '0 0 44px', fontSize: 15, color: 'rgba(255,255,255,0.5)', lineHeight: 1.7 }}>
+          {/* <p style={{ margin: '0 0 44px', fontSize: 15, color: 'rgba(255,255,255,0.5)', lineHeight: 1.7 }}>
             {t('login.description')}
-          </p>
+          </p> */}
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 8 }}>
             {[
@@ -513,9 +513,9 @@ export default function LoginPage(): React.ReactElement {
             ))}
           </div>
 
-          <p style={{ marginTop: 36, fontSize: 11.5, color: 'rgba(255,255,255,0.25)', letterSpacing: '0.03em' }}>
+          {/* <p style={{ marginTop: 36, fontSize: 11.5, color: 'rgba(255,255,255,0.25)', letterSpacing: '0.03em' }}>
             {t('login.selfHosted')}
-          </p>
+          </p> */}
         </div>
       </div>
 
@@ -527,7 +527,7 @@ export default function LoginPage(): React.ReactElement {
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6, marginBottom: 36 }}
             className="mobile-logo">
             <style>{`@media(min-width:1024px){.mobile-logo{display:none!important}}`}</style>
-            <img src="/logo-dark.webp" alt="TREK" style={{ height: 48 }} />
+            <img src="/logo-dark.webp" alt="TREK" style={{ height: 100 }} />
             <p style={{ margin: 0, fontSize: 16, color: '#9ca3af', fontFamily: "'MuseoModerno', sans-serif", textTransform: 'lowercase', whiteSpace: 'nowrap' }}>{t('login.tagline')}</p>
           </div>
 
@@ -567,7 +567,7 @@ export default function LoginPage(): React.ReactElement {
                   ? t('login.mfaTitle')
                   : mode === 'register'
                     ? (!appConfig?.has_users ? t('login.createAdmin') : t('login.createAccount'))
-                    : t('login.title')}
+                    : t('login.subtitle')}
             </h2>
             <p style={{ margin: '0 0 28px', fontSize: 13.5, color: '#9ca3af' }}>
               {passwordChangeStep
@@ -576,7 +576,7 @@ export default function LoginPage(): React.ReactElement {
                   ? t('login.mfaSubtitle')
                   : mode === 'register'
                     ? (!appConfig?.has_users ? t('login.createAdminHint') : t('login.createAccountHint'))
-                    : t('login.subtitle')}
+                    : t('')}
             </p>
 
             <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>

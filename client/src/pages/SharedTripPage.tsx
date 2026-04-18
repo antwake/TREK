@@ -92,7 +92,7 @@ export default function SharedTripPage() {
 
         {/* Logo */}
         <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', width: 44, height: 44, borderRadius: 12, background: 'rgba(255,255,255,0.08)', backdropFilter: 'blur(8px)', marginBottom: 12, border: '1px solid rgba(255,255,255,0.1)' }}>
-          <img src="/icons/icon-white.svg" alt="TREK" width="26" height="26" />
+          <img src="/logo-dark.webp" alt="TREK" width="36" height="36" />
         </div>
 
         <div style={{ fontSize: 10, fontWeight: 600, letterSpacing: 3, textTransform: 'uppercase', opacity: 0.35, marginBottom: 12 }}>Travel Resource & Exploration Kit</div>

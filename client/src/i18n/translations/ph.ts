@@ -341,7 +341,7 @@ const ph: Record<string, string | { name: string; category: string }[]> = {
 
   // Login
   'login.error': 'Nabigo ang login. Pakisuri ang iyong mga kredensyal.',
-  'login.tagline': 'Ang mga Trip Mo.\nAng Plano Mo.',
+  'login.tagline': 'Ingatan ang best moments.',
   'login.description': 'Mag-plan ng trips nang magkasama gamit ang interactive maps, budgets, at real-time sync.',
   'login.features.maps': 'Interactive Maps',
   'login.features.mapsDesc': 'Google Places, routes at clustering',
