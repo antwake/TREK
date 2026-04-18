@@ -4,10 +4,12 @@ import { useTranslation } from '../../i18n'
 import { useSettingsStore } from '../../store/settingsStore'
 
 const POPULAR_ZONES = [
+  { label: 'Paris', tz: 'Europe/Paris' },
+  { label: 'Montreal', tz: 'America/Toronto' },
+  { label: 'Manila', tz: 'Asia/Manila' },
   { label: 'New York', tz: 'America/New_York' },
   { label: 'London', tz: 'Europe/London' },
   { label: 'Berlin', tz: 'Europe/Berlin' },
-  { label: 'Paris', tz: 'Europe/Paris' },
   { label: 'Dubai', tz: 'Asia/Dubai' },
   { label: 'Mumbai', tz: 'Asia/Kolkata' },
   { label: 'Bangkok', tz: 'Asia/Bangkok' },
@@ -47,8 +49,8 @@ export default function TimezoneWidget() {
   const [zones, setZones] = useState(() => {
     const saved = localStorage.getItem('dashboard_timezones')
     return saved ? JSON.parse(saved) : [
-      { label: 'New York', tz: 'America/New_York' },
-      { label: 'Tokyo', tz: 'Asia/Tokyo' },
+      { label: 'Paris', tz: 'Europe/Paris' },
+      { label: 'Montreal', tz: 'America/Toronto' },
     ]
   })
   const [now, setNow] = useState(Date.now())

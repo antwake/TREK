@@ -231,7 +231,7 @@ export default function Navbar({ tripTitle, tripId, onBack, showBack, onShare }:
                     <LogOut className="w-4 h-4" />
                     {t('nav.logout')}
                   </button>
-                  {appVersion && (
+                  {/* {appVersion && (
                     <div className="px-4 pt-2 pb-2.5 text-center" style={{ marginTop: 4, borderTop: '1px solid var(--border-secondary)' }}>
                       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6 }}>
                         <div style={{ display: 'inline-flex', alignItems: 'center', gap: 5, background: 'var(--bg-tertiary)', borderRadius: 99, padding: '4px 12px' }}>
@@ -247,7 +247,7 @@ export default function Navbar({ tripTitle, tripId, onBack, showBack, onShare }:
                         </a>
                       </div>
                     </div>
-                  )}
+                  )} */}
                 </div>
               </div>
             </>,
