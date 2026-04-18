@@ -455,7 +455,7 @@ export async function downloadTripPDF({ trip, days, places, assignments, categor
 <div class="cover">
   ${coverImg ? `<div class="cover-bg" style="background-image:url('${escHtml(coverImg)}')"></div>` : ''}
   <div class="cover-dim"></div>
-  <div class="cover-brand"><img src="${absUrl('/logo-light.svg')}" style="height:28px;opacity:0.5;" /></div>
+  <div class="cover-brand"><img src="${absUrl('/logo-light.webp')}" style="height:28px;opacity:0.5;" /></div>
   <div class="cover-body">
     ${coverImg
       ? `<div class="cover-circle"><img src="${escHtml(coverImg)}" /></div>`
