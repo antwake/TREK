@@ -448,7 +448,7 @@ export async function downloadTripPDF({ trip, days, places, assignments, categor
 <!-- Footer on every page -->
 <div class="pdf-footer">
   <span>made with</span>
-  <img src="${absUrl('/logo-dark.svg')}" style="height:10px;opacity:0.6;" />
+  <img src="${absUrl('/logo-dark.webp')}" style="height:10px;opacity:0.6;" />
 </div>
 
 <!-- Cover -->
