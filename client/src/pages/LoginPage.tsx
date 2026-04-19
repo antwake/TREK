@@ -279,7 +279,7 @@ export default function LoginPage(): React.ReactElement {
           position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
           display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8,
         }}>
-          <img src="/logo-light.webp" alt="TREK" style={{ height: 120 }} />
+          <img src="/logo-light.webp" alt="TREK" style={{ height: 140 }} />
           <p style={{ margin: 0, fontSize: 20, color: 'rgba(255,255,255,0.6)', fontFamily: "'MuseoModerno', sans-serif", textTransform: 'lowercase', whiteSpace: 'nowrap' }}>{t('login.tagline')}</p>
         </div>
 

@@ -90,7 +90,7 @@ export default function Navbar({ tripTitle, tripId, onBack, showBack, onShare }:
         )}
 
         <Link to="/dashboard" className="flex items-center transition-colors flex-shrink-0">
-          <img src={dark ? '/logo-dark.webp' : '/logo-dark.webp'} alt="TREK" className="sm:hidden" style={{ height: 30, width: 30 }} />
+          <img src={dark ? '/logo-light.webp' : '/logo-dark.webp'} alt="TREK" className="sm:hidden" style={{ height: 36, width: 36 }} />
           <img src={dark ? '/logo-light.webp' : '/logo-dark.webp'} alt="TREK" className="hidden sm:block" style={{ height: 36 }} />
         </Link>
 
