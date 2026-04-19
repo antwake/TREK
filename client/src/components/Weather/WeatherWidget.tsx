@@ -92,7 +92,7 @@ export default function WeatherWidget({ lat, lng, date, compact = false }: Weath
 
   if (!lat || !lng) return null
 
-  const fontStyle = { fontFamily: "-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif" }
+  const fontStyle = { fontFamily: "Roboto, -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif" }
 
   if (loading) {
     return (

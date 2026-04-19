@@ -44,7 +44,7 @@ interface NoteAuthor {
   avatar?: string | null
 }
 
-const FONT = "-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif"
+const FONT = "Roboto, -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif"
 
 // ── Website Thumbnail (fetches OG image) ────────────────────────────────────
 const ogCache = {}

@@ -72,7 +72,7 @@ export function ContextMenu({ menu, onClose }: ContextMenuProps) {
       boxShadow: '0 8px 30px rgba(0,0,0,0.15)',
       backdropFilter: 'blur(20px)', WebkitBackdropFilter: 'blur(20px)',
       minWidth: 160,
-      fontFamily: "-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif",
+      fontFamily: "Roboto, -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif",
       animation: 'ctxIn 0.1s ease-out',
     }}>
       {menu.items.filter(Boolean).map((item, i) => {

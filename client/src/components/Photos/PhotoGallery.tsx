@@ -47,7 +47,7 @@ export default function PhotoGallery({ photos, onUpload, onDelete, onUpdate, pla
   }
 
   return (
-    <div className="flex flex-col h-full" style={{ fontFamily: "-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif" }}>
+    <div className="flex flex-col h-full" style={{ fontFamily: "Roboto, -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif" }}>
       {/* Header */}
       <div style={{ padding: '16px 24px', borderBottom: '1px solid rgba(0,0,0,0.06)', display: 'flex', alignItems: 'center', gap: 12, flexShrink: 0, flexWrap: 'wrap' }}>
         <div style={{ marginRight: 'auto' }}>

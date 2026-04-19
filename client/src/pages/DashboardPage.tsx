@@ -35,7 +35,7 @@ interface DashboardTrip {
   [key: string]: string | number | boolean | null | undefined
 }
 
-const font: React.CSSProperties = { fontFamily: "-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif" }
+const font: React.CSSProperties = { fontFamily: "Roboto, -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif" }
 
 const MS_PER_DAY = 86400000
 

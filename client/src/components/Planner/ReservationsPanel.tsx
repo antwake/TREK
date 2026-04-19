@@ -360,7 +360,7 @@ export default function ReservationsPanel({ tripId, reservations, days, assignme
   const total = reservations.length
 
   return (
-    <div style={{ height: '100%', display: 'flex', flexDirection: 'column', fontFamily: "-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif" }}>
+    <div style={{ height: '100%', display: 'flex', flexDirection: 'column', fontFamily: "Roboto, -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif" }}>
       {/* Header */}
       <div style={{ padding: '20px 24px 16px', borderBottom: '1px solid var(--border-faint)', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         <div>

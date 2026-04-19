@@ -548,7 +548,7 @@ export default function BudgetPanel({ tripId, tripMembers = [] }: BudgetPanelPro
 
   // ── Main Layout ──────────────────────────────────────────────────────────
   return (
-    <div style={{ fontFamily: "'Poppins', -apple-system, BlinkMacSystemFont, system-ui, sans-serif" }}>
+    <div style={{ fontFamily: "'Poppins', Roboto, -apple-system, BlinkMacSystemFont, system-ui, sans-serif" }}>
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '16px 16px 12px', flexWrap: 'wrap', gap: 8 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
           <Calculator size={20} color="var(--text-primary)" />

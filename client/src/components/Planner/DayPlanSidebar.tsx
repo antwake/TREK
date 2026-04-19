@@ -796,7 +796,7 @@ const DayPlanSidebar = React.memo(function DayPlanSidebar({
   const anyGeoPlace = anyGeoAssignment || (places || []).find(p => p.lat && p.lng)
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', height: '100%', position: 'relative', fontFamily: "-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif" }}>
+    <div style={{ display: 'flex', flexDirection: 'column', height: '100%', position: 'relative', fontFamily: "Roboto, -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif" }}>
       {/* Reise-Titel */}
       <div style={{ padding: '16px 16px 12px', borderBottom: '1px solid var(--border-faint)', flexShrink: 0 }}>
         <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: 8 }}>

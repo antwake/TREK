@@ -357,7 +357,7 @@ export default function LoginPage(): React.ReactElement {
   }
 
   return (
-    <div style={{ minHeight: '100vh', display: 'flex', fontFamily: "-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif", position: 'relative' }}>
+    <div style={{ minHeight: '100vh', display: 'flex', fontFamily: "Roboto, -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif", position: 'relative' }}>
 
       {/* Language toggle */}
       <button

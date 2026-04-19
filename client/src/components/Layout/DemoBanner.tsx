@@ -238,7 +238,7 @@ export default function DemoBanner(): React.ReactElement | null {
       background: 'rgba(0,0,0,0.6)', backdropFilter: 'blur(8px)',
       display: 'flex', alignItems: 'center', justifyContent: 'center',
       padding: 16, overflow: 'auto',
-      fontFamily: "-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif",
+      fontFamily: "Roboto, -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif",
     }} onClick={() => setDismissed(true)}>
       <div style={{
         background: 'white', borderRadius: 20, padding: '28px 24px 20px',

@@ -403,7 +403,7 @@ export default function MemoriesPanel({ tripId, startDate, endDate }: MemoriesPa
     })
 
   const font: React.CSSProperties = {
-    fontFamily: "-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif",
+    fontFamily: "Roboto, -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif",
   }
 
   // ── Loading ───────────────────────────────────────────────────────────────

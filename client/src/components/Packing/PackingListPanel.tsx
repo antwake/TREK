@@ -987,7 +987,7 @@ export default function PackingListPanel({ tripId, items }: PackingListPanelProp
     reader.readAsText(file)
   }
 
-  const font = { fontFamily: "-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif" }
+  const font = { fontFamily: "Roboto, -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif" }
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', height: '100%', ...font }}>

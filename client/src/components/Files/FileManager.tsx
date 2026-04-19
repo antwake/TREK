@@ -526,7 +526,7 @@ export default function FileManager({ files = [], onUpload, onDelete, onUpdate, 
   }
 
   return (
-    <div className="flex flex-col h-full" style={{ fontFamily: "-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif" }} onPaste={handlePaste} tabIndex={-1}>
+    <div className="flex flex-col h-full" style={{ fontFamily: "Roboto, -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif" }} onPaste={handlePaste} tabIndex={-1}>
       {/* Lightbox */}
       {lightboxIndex !== null && <ImageLightbox files={imageFiles} initialIndex={lightboxIndex} onClose={() => setLightboxIndex(null)} />}
 

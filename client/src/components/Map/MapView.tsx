@@ -61,7 +61,7 @@ function createPlaceIcon(place, orderNumbers, isSelected) {
       box-shadow:0 1px 4px rgba(0,0,0,0.18);
       display:flex;align-items:center;justify-content:center;
       font-size:${orderNumbers.length > 1 ? 7.5 : 9}px;font-weight:800;color:#111827;
-      font-family:-apple-system,system-ui,sans-serif;line-height:1;
+      font-family:Roboto, -apple-system,system-ui,sans-serif;line-height:1;
       box-sizing:border-box;white-space:nowrap;
     ">${label}</span>`
   }
@@ -251,7 +251,7 @@ function RouteLabel({ midpoint, walkingText, drivingText }: RouteLabelProps) {
       background:rgba(0,0,0,0.85);backdrop-filter:blur(8px);
       color:#fff;border-radius:99px;padding:3px 9px;
       font-size:9px;font-weight:600;white-space:nowrap;
-      font-family:-apple-system,BlinkMacSystemFont,system-ui,sans-serif;
+      font-family:Roboto, -apple-system,BlinkMacSystemFont,system-ui,sans-serif;
       box-shadow:0 2px 12px rgba(0,0,0,0.3);
       pointer-events:none;
       position:relative;left:-50%;top:-50%;
@@ -472,7 +472,7 @@ export const MapView = memo(function MapView({
           className="map-tooltip"
           permanent={isTouchDevice && isSelected}
         >
-          <div style={{ fontFamily: "-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif" }}>
+          <div style={{ fontFamily: "Roboto, -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif" }}>
             <div style={{ fontWeight: 600, fontSize: 12, color: 'var(--text-primary)', whiteSpace: 'nowrap' }}>
               {place.name}
             </div>

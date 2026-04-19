@@ -206,7 +206,7 @@ export default function PlaceInspector({
         transform: 'translateX(-50%)',
         width: `min(800px, calc(100% - ${leftWidth}px - ${rightWidth}px - 32px))`,
         zIndex: 50,
-        fontFamily: "-apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif",
+        fontFamily: "Roboto, -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif",
       }}
     >
       <div style={{
