@@ -566,7 +566,7 @@ export default function LoginPage(): React.ReactElement {
                 : mode === 'login' && mfaStep
                   ? t('login.mfaTitle')
                   : mode === 'register'
-                    ? (!appConfig?.has_users ? t('login.createAdmin') : t('login.createAccount'))
+                    ? (!appConfig?.has_users ? t('login.createAdmin') : t('login.createAccountHint'))
                     : t('login.subtitle')}
             </h2>
             <p style={{ margin: '0 0 28px', fontSize: 13.5, color: '#9ca3af' }}>
@@ -575,7 +575,7 @@ export default function LoginPage(): React.ReactElement {
                 : mode === 'login' && mfaStep
                   ? t('login.mfaSubtitle')
                   : mode === 'register'
-                    ? (!appConfig?.has_users ? t('login.createAdminHint') : t('login.createAccountHint'))
+                    ? (!appConfig?.has_users ? t('login.createAdminHint') : t(''))
                     : t('')}
             </p>
 
@@ -655,7 +655,7 @@ export default function LoginPage(): React.ReactElement {
                     <User size={15} style={{ position: 'absolute', left: 13, top: '50%', transform: 'translateY(-50%)', color: '#9ca3af', pointerEvents: 'none' }} />
                     <input
                       type="text" value={username} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setUsername(e.target.value)} required
-                      placeholder="admin" style={inputBase}
+                      placeholder="bilat" style={inputBase}
                       onFocus={(e: React.FocusEvent<HTMLInputElement>) => e.target.style.borderColor = '#111827'}
                       onBlur={(e: React.FocusEvent<HTMLInputElement>) => e.target.style.borderColor = '#e5e7eb'}
                     />
