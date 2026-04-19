@@ -141,7 +141,7 @@ html.dark .bg-slate-50\/60, html.dark [class*="bg-slate-50/"] { background-color
 :root {
   --safe-top: env(safe-area-inset-top, 0px);
   --nav-h: calc(56px + var(--safe-top));
-  --font-system: "MuseoModerno", Roboto, -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', system-ui, sans-serif;
+  --font-system: "Roboto", -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', system-ui, sans-serif;
   --sp-1: 4px;
   --sp-2: 8px;
   --sp-3: 12px;

@@ -42,7 +42,7 @@ export default function SettingsPage(): React.ReactElement {
     { id: 'notifications', label: t('settings.tabs.notifications') },
     ...(hasIntegrations ? [{ id: 'integrations', label: t('settings.tabs.integrations') }] : []),
     { id: 'account', label: t('settings.tabs.account') },
-    ...(appVersion ? [{ id: 'about', label: t('settings.tabs.about') }] : []),
+    // ...(appVersion ? [{ id: 'about', label: t('settings.tabs.about') }] : []),
   ]
 
   return (
@@ -85,7 +85,7 @@ export default function SettingsPage(): React.ReactElement {
           {activeTab === 'notifications' && <NotificationsTab />}
           {activeTab === 'integrations' && hasIntegrations && <IntegrationsTab />}
           {activeTab === 'account' && <AccountTab />}
-          {activeTab === 'about' && appVersion && <AboutTab appVersion={appVersion} />}
+          {/* {activeTab === 'about' && appVersion && <AboutTab appVersion={appVersion} />} */}
         </div>
       </div>
     </div>
